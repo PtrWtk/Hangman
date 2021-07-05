@@ -9,7 +9,7 @@ namespace Hangman_Simple
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             bool playAgain = true;
             while (playAgain)
@@ -31,7 +31,7 @@ namespace Hangman_Simple
             int cia = 26;//Number of letter in alphabet
             int guessCount = 0; //wrong guesses counter
             int overallGuessCount = 0;
-            int guessLimit = 4;//change limit to 10
+            int guessLimit = 10;//change limit to 10
             bool guessed = false;//used to track if player guessed the word
             bool haveGuesses = true;
             char[] guessesSoFar = new char[cia]; //stores used letters
